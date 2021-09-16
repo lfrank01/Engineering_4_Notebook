@@ -5,24 +5,41 @@
 # This code will run return the sum, difference, quotient, and modulo 
 # of two numbers inputed to the system. 
 
-print("Calculator Program")
+print("Calculator Program \n")
+
 
 def doMath(first_num, second_num, option):
-    if option == 1:
-        return str(int(first_num) + int(second_num))
     
-first_num = input('Input your first number: ')
-second_num = input('Input your second number: ')
+    if option == 1:
+        # This is.
+        return (first_num + second_num)
+        
+    if option == 2:
+        # This is difference.
+        return (first_num - second_num)
+        
+    if option == 3:
+        # This is product.
+        return (first_num * second_num)
+        # An aserisk indicates multiplication.
+        
+    if option == 4:
+        # This is quotient
+        return round((first_num / second_num), 2)
+        
+    if option == 5:
+        # This is modulo
+        return(first_num % second_num)
+    
+a = int(input('Input your first number: '))
+b = int(input('Input your second number: '))
 
-doMath(first_num, second_num, option)
-# Work in progress currently.
+# It's neccesary to convert to an integer because the input wil come 
+# in a string/str format, which cannot do math operations.
 
-# Note - Make sure quotient is rounded to 2 digits.
-# Note - Modulo = remainder after division
-
-# Last 5 lines of code should be:
-    # print("Sum:\t\t" + doMath(a,b,1))
-    # print("Difference:\t" + doMath(a,b,2))
-    # print("Product:\t" + doMath(a,b,3))
-    # print("Quotient:\t" + doMath(a,b,4))
-    # print("Modulo:\t\t" + doMath(a,b,5))
+print("Sum:\t\t" + str(doMath(a, b, 1)))
+print("Difference:\t" + str(doMath(a, b, 2)))
+print("Product:\t" + str(doMath(a, b, 3)))
+print("Quotient:\t" + str(doMath(a, b, 4)))
+print("Modulo:\t\t" + str(doMath(a, b, 5)))
+    
