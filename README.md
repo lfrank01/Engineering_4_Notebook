@@ -3,21 +3,6 @@ This repository contains documentation of Engineering 4 assignments and projects
 
 Note to self: for each assignment's documentation, there should be the assignment description, evidence, wiring (if applicable), and reflection.
 
-# Basic Overview:
-
-### Assignment Description
-Write your assignment description here. It should be at least a few sentences.
-
-### Evidence 
-Pictures / Gifs of your work should go here.  You need to communicate what your thing does. For code only assignments like the Python calculator, include a screenshot of the output of the code.
-
-### Wiring
-This may not be applicable to all assignments. Anything where you wire something up, include the wiring diagram here.
-
-### Reflection
-What went wrong / was challenging, how'd you figure it out, and what did you learn from that experience?  Your ultimate goal for the reflection is to pass on knowledge that will make this assignment better or easier for the next person. Think about your audience for this one, which may be "future you" (when you realize you need some of this code in three months), me, or your college admission committee!
-
-
 ## Python_Dice_Roller
 
 ### Assignment Description
@@ -26,53 +11,58 @@ The Python Dice Roller assignment was the first Python assignments in Engineerin
 
 ### Evidence 
 
-
-### Wiring
-
-
-
-### Reflection
-
-
-
-
-
-
-Okay so I am giving you a freebie so you have an example of the kind of reflections that I want. I'll start you off with an example for dice_roller.py, then its up to you to start your reflections with the Python calculator and all subsequent assignments. You can delete this section from your personal readme. 
-
-### Assignment Description
-
-The purpose of this assignment was to create a program that can automatically roll dice. The program also took user input to decide whether another dice should be rolled, or if the program should exit. The spicy version added complexity by asking the user to specify the number of sides on the dice and the number of dice to be rolled at a time. The user was then asked whether they wanted to roll again with the same settings, change the settings, or exit the program. 
-
-### Evidence 
-
 Vanilla version:
 
-![Screenshot 2021-09-10 3 15 26 PM](https://user-images.githubusercontent.com/89222808/133513775-a3eafb43-f836-4e4f-8aa6-e28ca584901f.png)
+![Vanilla Dice Roller]()
 
 Spicy version:
 
-![Screenshot 2021-09-10 3 18 38 PM](https://user-images.githubusercontent.com/89222808/133513750-727cdb6c-1c27-4c8a-83d4-50ea9136a221.png)
+![Spicy Dice Roller]()
 
 ### Wiring
 
-N/A
+No wiring was required for this assignment. 
 
 ### Reflection
 
-This assignment was relatively simple, but was challenging because I had not coded in Python for several months. I learned that I could import parts of toolboxes without importing the entire thing, but that changes the syntax of how I call the function later. I also learned about using a while loop to control whether a user wants to exit the program. For the spicy version, I needed to use nested loops. Python determines what is inside a loop by the indent level of each line of text, rather than brackets like some other coding styles. That means I need to be really careful with my tabs!
+The Python Dice Roller assignment was a relatively simple assignment, being one of the first coding assignments of the school year. However, there were nuanced aspects of this assignment that had not been covered before in Engineering IV and lessons learned
+
+* The 'input()' function allows a variable to be set to somethign a user types in. For example, `num_sides = input('Number of   sides: ') allowed users to choose how many sides they wanted their die to have. This variable was then called in the code later on.
+  
+* There is a difference between `==` and `=`. Using `==` asks "Is this equal to that?" whereas `=` says "This **is** equal to that.  
+
+* More information can be found in the code  comments.
 
 
 ## Python_Calculator
 
 ### Assignment Description
 
-Your turn! You will be writing a section of readme like this for all subsequent assignments.
+The Python Calculator was a step more dificult than the Dice Roller assignment, incorpating what was learned in the Dice Roller asingment, such as the `input()` function. The assignment's nuanced element was that it required a function to be made that also have different if statements that performed different operations. The task was to design code to ask user input for two different numbers and then perofrm a series of operation on those numbers and print them. The operations were the sum, difference, product, quotient, modulo, and for the spicy section, factorials. 
 
 ### Evidence 
 
+Vanilla version:
+
+![Vanilla Dice Roller]()
+
+Spicy version:
+
+![Spicy Dice Roller]()
 
 ### Wiring
 
+No wiring was required for this assignment. 
 
 ### Reflection
+
+This assignment was initially confusing, but once I figured out that only one function was needed to perform the operations and that the operations could be simply called using if statements, it made more sense. Here were some lessons learned:
+
+* In a print statement writing `\t` creates a tab in the print line, which is helpful for formatting consecuitve print statements.
+
+* A print function can incoporate a function by writing something like `print(str(doMath(a, b, 6)))`. Note that the 6 meant that the sixth if statement was being called, in this case the 1st factorial.
+
+* It's helpful to ask other students for help. By asking what somebody did for a certain aspect of the code, there's a chance to have a new perspective on the topic, which can then be modified and made original. In this case, asking advice for how to create a factorial calculator was helpful.
+
+* More information can be found in the code comments. 
+ 
