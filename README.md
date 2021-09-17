@@ -1,4 +1,4 @@
-# Engineering_4_Notebook - Work in Progress
+# Engineering_4_Notebook
 This repository contains documentation of Engineering 4 assignments and projects.
 
 Note to self: for each assignment's documentation, there should be the assignment description, evidence, wiring (if applicable), and reflection.
@@ -13,11 +13,11 @@ The Python Dice Roller assignment was the first Python assignments in Engineerin
 
 Vanilla version:
 
-![Vanilla Dice Roller]()
+![Vanilla Dice Roller](/Engineering_IV-Vanilla_Dice_Roller.png)
 
 Spicy version:
 
-![Spicy Dice Roller]()
+![Spicy Dice Roller](/Engineering_IV-Spicy_Dice_Roller.png)
 
 ### Wiring
 
@@ -44,11 +44,11 @@ The Python Calculator was a step more dificult than the Dice Roller assignment, 
 
 Vanilla version:
 
-![Vanilla Dice Roller]()
+![Vanilla Calculator](/Engineering_IV-Vanilla_Calculator.png)
 
 Spicy version:
 
-![Spicy Dice Roller]()
+![Spicy Calculator](/Engineering_IV-Spicy_Calculator.png)
 
 ### Wiring
 
