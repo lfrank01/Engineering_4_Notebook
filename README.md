@@ -82,7 +82,7 @@ Vanilla version:
 
 Spicy version:
 
-![Spicy Quadratic Solver](/Engineering_IV-Quadratic_Solver_Spicy.png)
+![Spicy Quadratic Solver Correct](/Engineering_IV-Quadratic_Solver_Spicy_Correct.png)
 
 ### Wiring
 
@@ -92,8 +92,12 @@ No wiring was required for this assignment.
 
 I had to remember some basic algebra terms like the discriminant and vertex form for this assignment. This wasn't dificult, but it was more challenging to convert from standard from to vertex form. Here are the lessons I learned:
 
-* First of all, having a reliable code environment is helpful. I was using [this coding IDE](https://www.online-python.com/), but because it was randomly freezing on me, I swithced to [this](https://www.onlinegdb.com/online_python_compiler) more reliable one. 
+* First of all, having a reliable code environment is helpful. I was using [this coding IDE](https://www.online-python.com/), but because it was randomly freezing on me, I swithced to [this](https://www.onlinegdb.com/online_python_compiler) more reliable one. However, the spicy version of code was run on the [unreliable IE](https://www.online-python.com/) because the other was not registering f strings.
+
+* Going off of that, f strings are a really helpful Python 3 tool that allows variables to be called in print statements without having to use `str()` each time. This made the printing of the vertex form and discriminant much easier.
+
+* Make sure to read the assignment's requirements. I got functioning code the first time I did this assignment, but it didn't use f strings and functions like the assignment asked, so I re-did it.
 
 * The assignment stated that because Python didn't have a built-in square root operator, the class `function` from the library `math` had to be used. However, I tested simply taking the exponent to the 1/2 or `**(1/2)`, and this worked just as well, suggesting that Python does in fact have a built-in square root operator.
 
-* More code can be found in the code comments 
+* More lessons can be found in the code comments 
