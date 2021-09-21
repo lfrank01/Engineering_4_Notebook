@@ -65,4 +65,35 @@ This assignment was initially confusing, but once I figured out that only one fu
 * It's helpful to ask other students for help. By asking what somebody did for a certain aspect of the code, there's a chance to have a new perspective on the topic, which can then be modified and made original. In this case, asking advice for how to create a factorial calculator was helpful.
 
 * More information can be found in the code comments. 
- 
+
+
+## Quadratic Solver
+
+### Assignment Description
+
+The quadratic solver asignment required code to be designed that could calculate the roots of a quadratic function (ax^2 + bx +c) when given user input for a, b, and c. 
+Some alebra had to be recalled to remember how to calculate the discriminant ((-b +/- sqrt(b^2-4ac))/2a), and for the spicy section of the assignment, the greatest challenge was to write code that could print out the function in vertex form, as it was initially hard to algebraically convert from standard to vertex form. This assignemnt taught valuble lessons of how to represent algebraic equations in a coding environment.
+
+### Evidence 
+
+Vanilla version:
+
+![Vanilla Quadratic Solver](/Engineering_IV-Quadratic_Solver.png)
+
+Spicy version:
+
+![Spicy Quadratic Solver](/Engineering_IV-Quadratic_Solver_Spicy.png)
+
+### Wiring
+
+No wiring was required for this assignment. 
+
+### Reflection
+
+I had to remember some basic algebra terms like the discriminant and vertex form for this assignment. This wasn't dificult, but it was more challenging to convert from standard from to vertex form. Here are the lessons I learned:
+
+* First of all, having a reliable code environment is helpful. I was using [this coding IDE](https://www.online-python.com/), but because it was randomly freezing on me, I swithced to [this](https://www.onlinegdb.com/online_python_compiler) more reliable one. 
+
+* The assignment stated that because Python didn't have a built-in square root operator, the class `function` from the library `math` had to be used. However, I tested simply taking the exponent to the 1/2 or `**(1/2)`, and this worked just as well, suggesting that Python does in fact have a built-in square root operator.
+
+* More code can be found in the code comments 
