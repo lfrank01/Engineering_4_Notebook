@@ -101,3 +101,33 @@ I had to remember some basic algebra terms like the discriminant and vertex form
 * The assignment stated that because Python didn't have a built-in square root operator, the class `function` from the library `math` had to be used. However, I tested simply taking the exponent to the 1/2 or `**(1/2)`, and this worked just as well, suggesting that Python does in fact have a built-in square root operator.
 
 * More lessons can be found in the code comments 
+
+
+## Strings and Loops
+
+### Assignment Description
+
+Work in progress...
+
+### Evidence 
+
+Vanilla version:
+
+![Vanilla Strings and Loops](/Engineering_IV-Strings_And_Loops.png)
+
+Spicy version:
+
+![Spicy Strings and Loops](/Engineering_IV-strings_and_loops_spicy.png)
+
+### Wiring
+
+No wiring was required for this assignment. 
+
+### Reflection
+
+This assignment took a while for me, but as a result of it I now understand list comprehension and ways to condense code much better. Here are some reflections:
+
+* Google is very helpful. When I was confused about list comprehension, I Googled it and found several pages explaining how it works. 
+* GitHib is very helpful. Looking at the work of other people for influence...
+* 
+* It's really helpful to ask other people for advice.
