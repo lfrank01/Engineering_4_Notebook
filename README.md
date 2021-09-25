@@ -107,7 +107,7 @@ I had to remember some basic algebra terms like the discriminant and vertex form
 
 ### Assignment Description
 
-The code for the Strings and Loops assignment had to make it so that when a sentence was typed from user input, the terminal would print out the sentence, one character at a time, with a dash between each word. In order to this, nested for loops had to be used. Also, for the spicy version of this assignment, the challenege was to make the code as condensed as possible. To do this, the code had to incorporate "list comprehension," which is a method of condensing nested for loops in Python. 
+The code for the Strings and Loops assignment had to make it so that when a sentence was typed from user input, the terminal would print out the sentence, one character at a time, with a dash between each word. In order to this, nested for-loops had to be used. Also, for the spicy version of this assignment, the challenege was to make the code as condensed as possible. To do this, the code had to incorporate "list comprehension," which is a method of condensing nested for-loops in Python. 
 
 ### Evidence 
 
@@ -129,7 +129,12 @@ This assignment took a while for me, but as a result of it I now understand list
 
 * Google is your friend. When I was confused about list comprehension, I Googled it and found several pages explaining how it works. 
 
-* GitHib is your helpful. It was helpful to look at the work 
+* GitHib is your friend. It doesn't hurt to draw inspiration from other people. 
 
+* The `split()` function works to seperate a sentence into an index of words in str format. This was helpful to seperate the user input into an index that could be called with a for loop.
+ 
+* The `len()` function is helpful for finding the length of a str. It's also helpful when making a for loop.
 
-* It's really helpful to ask other people for advice.
+* Finally, list comprehension is a good tool for condensing nested for-loops, and it's something that's unique to Python. (Here)[https://www.w3schools.com/python/python_lists_comprehension.asp] is an article about list comprehension that I found helpful.
+
+* Code comments have additional info.
