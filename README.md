@@ -117,7 +117,7 @@ Vanilla version:
 
 Spicy version:
 
-![Spicy Strings and Loops](/Engineering_IV-strings_and_loops_spicy.png)
+![Spicy Strings and Loops](/Engineering_IV-Strings_And_Loops_Spicy.png)
 
 ### Wiring
 
@@ -135,6 +135,6 @@ This assignment took a while for me, but as a result of it I now understand list
  
 * The `len()` function is helpful for finding the length of a str. It's also helpful when making a for loop.
 
-* Finally, list comprehension is a good tool for condensing nested for-loops, and it's something that's unique to Python. (Here)[https://www.w3schools.com/python/python_lists_comprehension.asp] is an article about list comprehension that I found helpful.
+* Finally, list comprehension is a good tool for condensing nested for-loops, and it's something that's unique to Python. [Here](https://www.w3schools.com/python/python_lists_comprehension.asp) is an article about list comprehension that I found helpful.
 
 * Code comments have additional info.
