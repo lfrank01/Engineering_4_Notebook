@@ -107,7 +107,7 @@ I had to remember some basic algebra terms like the discriminant and vertex form
 
 ### Assignment Description
 
-Work in progress...
+The code for the Strings and Loops assignment had to make it so that when a sentence was typed from user input, the terminal would print out the sentence, one character at a time, with a dash between each word. In order to this, nested for loops had to be used. Also, for the spicy version of this assignment, the challenege was to make the code as condensed as possible. To do this, the code had to incorporate "list comprehension," which is a method of condensing nested for loops in Python. 
 
 ### Evidence 
 
@@ -127,7 +127,9 @@ No wiring was required for this assignment.
 
 This assignment took a while for me, but as a result of it I now understand list comprehension and ways to condense code much better. Here are some reflections:
 
-* Google is very helpful. When I was confused about list comprehension, I Googled it and found several pages explaining how it works. 
-* GitHib is very helpful. Looking at the work of other people for influence...
-* 
+* Google is your friend. When I was confused about list comprehension, I Googled it and found several pages explaining how it works. 
+
+* GitHib is your helpful. It was helpful to look at the work 
+
+
 * It's really helpful to ask other people for advice.
