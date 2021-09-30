@@ -138,3 +138,32 @@ This assignment took a while for me, but as a result of it I now understand list
 * Finally, list comprehension is a good tool for condensing nested for-loops, and it's something that's unique to Python. [Here](https://www.w3schools.com/python/python_lists_comprehension.asp) is an article about list comprehension that I found helpful.
 
 * Code comments have additional info.
+
+
+## Hangman/MSP Challenge
+
+### Assignment Description
+
+For the MSP Challenge assignent, the goal was to create a functioning hangman game. To do this, several functions had to be created that divided up the tasks, since the assignment as a whole was relatively complicated. The basis of the code was to create a function that generated the hangman image and a function that checked user input of a guessed letter and determined whether it was part or not part of the secret word. 
+
+### Evidence 
+
+Vanilla / Some Spice version:
+
+![MSP Challenge](/Engineering_IV-MSP_Challenge.png)
+
+### Wiring
+
+No wiring was required for this assignment. 
+
+### Reflection
+
+The MSP Challenge was a good example of how it's really helpful to divide up sections of code into functions. Doing this makes the organization of the code easier and the workload less intimidating. Here are some lessons learned:
+
+* The .join() function is really helpful for converting an index into string. Whatever preceeds the functions, like "".join() or ", ".join() will be what goes in between each item in the index when it's converted to a string.
+
+* The `enumerate()` function will convert a string into a list. It's kind of the opposite of the `.join()` function. 
+
+* In a for loop, if, for example, `for position, character in listis` was written, what goes before the comma will represent the place/position in the list, and what goes after the comma will represent the value of whatever place in the list. 
+
+* More info in the code comments.
