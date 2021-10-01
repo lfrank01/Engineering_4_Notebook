@@ -7,7 +7,7 @@ Note to self: for each assignment's documentation, there should be the assignmen
 
 ### Assignment Description
 
-The Python Dice Roller assignment was the first Python assignments in Engineering IV besides the introductory Hello Python assignment. The purpose of the assignment was to create a Python program that could automatically roll dice. In addition, the program had to take user input of whether it would re-roll or exit the program after it had done its initial roll. For the spicy part of this assignment, the program had to also take user input on the number of sides that the dice should have and also how many dice were to be rolled. The spicy part also had to give the user the option of changing the settings in addition to choosing to either exit the prom or re-roll
+The Python Dice Roller assignment was the first Python assignment in Engineering IV besides the introductory Hello Python assignment. The purpose of the assignment was to create a Python program that could automatically roll dice. In addition, the program had to take user input of whether it would re-roll or exit the program after it had done its initial roll. For the spicy part of this assignment, the program had to also take user input on the number of sides that the dice should have and also how many dice were to be rolled. The spicy part also had to give the user the option of changing the settings in addition to choosing to either exit the prom or re-roll
 
 ### Evidence 
 
@@ -27,18 +27,18 @@ No wiring was required for this assignment.
 
 The Python Dice Roller assignment was a relatively simple assignment, being one of the first coding assignments of the school year. However, there were nuanced aspects of this assignment that had not been covered before in Engineering IV and lessons learned
 
-* The 'input()' function allows a variable to be set to somethign a user types in. For example, `num_sides = input('Number of   sides: ') allowed users to choose how many sides they wanted their die to have. This variable was then called in the code later on.
+* The 'input()' function allows a variable to be set to something a user types in. For example, `num_sides = input('Number of sides: ') allowed users to choose how many sides they wanted their die to have. This variable was then called in the code later on.
   
 * There is a difference between `==` and `=`. Using `==` asks "Is this equal to that?" whereas `=` says "This **is** equal to that.  
 
-* More information can be found in the code  comments.
+* More information can be found in the code comments.
 
 
 ## Python_Calculator
 
 ### Assignment Description
 
-The Python Calculator was a step more dificult than the Dice Roller assignment, incorpating what was learned in the Dice Roller asingment, such as the `input()` function. The assignment's nuanced element was that it required a function to be made that also have different if statements that performed different operations. The task was to design code to ask user input for two different numbers and then perofrm a series of operation on those numbers and print them. The operations were the sum, difference, product, quotient, modulo, and for the spicy section, factorials. 
+The Python Calculator was a step more difficult than the Dice Roller assignment, incorporating what was learned in the Dice Roller assignment, such as the `input()` function. The assignment's nuanced element was that it required a function to be made that also have different if statements that performed different operations. The task was to design code to ask user input for two different numbers and then perform a series of operations on those numbers and print them. The operations were the sum, difference, product, quotient, modulo, and for the spicy section, factorials. 
 
 ### Evidence 
 
@@ -58,11 +58,11 @@ No wiring was required for this assignment.
 
 This assignment was initially confusing, but once I figured out that only one function was needed to perform the operations and that the operations could be simply called using if statements, it made more sense. Here were some lessons learned:
 
-* In a print statement writing `\t` creates a tab in the print line, which is helpful for formatting consecuitve print statements.
+* In a print statement writing `\t` creates a tab in the print line, which is helpful for formatting consecutive print statements.
 
-* A print function can incoporate a function by writing something like `print(str(doMath(a, b, 6)))`. Note that the 6 meant that the sixth if statement was being called, in this case the 1st factorial.
+* A print function can incorporate a function by writing something like `print(str(doMath(a, b, 6)))`. Note that the 6 meant that the sixth if statement was being called, in this case, the 1st factorial.
 
-* It's helpful to ask other students for help. By asking what somebody did for a certain aspect of the code, there's a chance to have a new perspective on the topic, which can then be modified and made original. In this case, asking advice for how to create a factorial calculator was helpful.
+* It's helpful to ask other students for help. By asking what somebody did for a certain aspect of the code, there's a chance to have a new perspective on the topic, which can then be modified and made original. In this case, asking for advice on how to create a factorial calculator was helpful.
 
 * More information can be found in the code comments. 
 
@@ -71,8 +71,8 @@ This assignment was initially confusing, but once I figured out that only one fu
 
 ### Assignment Description
 
-The quadratic solver asignment required code to be designed that could calculate the roots of a quadratic function (ax^2 + bx +c) when given user input for a, b, and c. 
-Some alebra had to be recalled to remember how to calculate the discriminant ((-b +/- sqrt(b^2-4ac))/2a), and for the spicy section of the assignment, the greatest challenge was to write code that could print out the function in vertex form, as it was initially hard to algebraically convert from standard to vertex form. This assignemnt taught valuble lessons of how to represent algebraic equations in a coding environment.
+The quadratic solver assignment required code to be designed that could calculate the roots of a quadratic function (ax^2 + bx +c) when given user input for a, b, and c. 
+Some algebra had to be recalled to remember how to calculate the discriminant ((-b +/- sqrt(b^2-4ac))/2a), and for the spicy section of the assignment, the greatest challenge was to write code that could print out the function in vertex form, as it was initially hard to algebraically convert from standard to vertex form. This assignment taught valuable lessons on how to represent algebraic equations in a coding environment.
 
 ### Evidence 
 
@@ -90,9 +90,9 @@ No wiring was required for this assignment.
 
 ### Reflection
 
-I had to remember some basic algebra terms like the discriminant and vertex form for this assignment. This wasn't dificult, but it was more challenging to convert from standard from to vertex form. Here are the lessons I learned:
+I had to remember some basic algebra terms like the discriminant and vertex form for this assignment. This wasn't difficult, but it was more challenging to convert from standard form to vertex form. Here are the lessons I learned:
 
-* First of all, having a reliable code environment is helpful. I was using [this coding IDE](https://www.online-python.com/), but because it was randomly freezing on me, I swithced to [this](https://www.onlinegdb.com/online_python_compiler) more reliable one. However, the spicy version of code was run on the [unreliable IE](https://www.online-python.com/) because the other was not registering f strings.
+* First of all, having a reliable code environment is helpful. I was using [this coding IDE](https://www.online-python.com/), but because it was randomly freezing on me, I switched to [this](https://www.onlinegdb.com/online_python_compiler) more reliable one. However, the spicy version of code was run on the [unreliable IE](https://www.online-python.com/) because the other was not registering f strings.
 
 * Going off of that, f strings are a really helpful Python 3 tool that allows variables to be called in print statements without having to use `str()` each time. This made the printing of the vertex form and discriminant much easier.
 
@@ -107,7 +107,7 @@ I had to remember some basic algebra terms like the discriminant and vertex form
 
 ### Assignment Description
 
-The code for the Strings and Loops assignment had to make it so that when a sentence was typed from user input, the terminal would print out the sentence, one character at a time, with a dash between each word. In order to this, nested for-loops had to be used. Also, for the spicy version of this assignment, the challenege was to make the code as condensed as possible. To do this, the code had to incorporate "list comprehension," which is a method of condensing nested for-loops in Python. 
+The code for the Strings and Loops assignment had to make it so that when a sentence was typed from user input, the terminal would print out the sentence, one character at a time, with a dash between each word. In order to do this, nested for-loops had to be used. Also, for the spicy version of this assignment, the challenge was to make the code as condensed as possible. To do this, the code had to incorporate "list comprehension," which is a method of condensing nested for-loops in Python. 
 
 ### Evidence 
 
@@ -129,9 +129,9 @@ This assignment took a while for me, but as a result of it I now understand list
 
 * Google is your friend. When I was confused about list comprehension, I Googled it and found several pages explaining how it works. 
 
-* GitHib is your friend. It doesn't hurt to draw inspiration from other people. 
+* GitHub is your friend. It doesn't hurt to draw inspiration from other people. 
 
-* The `split()` function works to seperate a sentence into an index of words in str format. This was helpful to seperate the user input into an index that could be called with a for loop.
+* The `split()` function works to separate a sentence into an index of words in str format. This was helpful to separate the user input into an index that could be called with a for loop.
  
 * The `len()` function is helpful for finding the length of a str. It's also helpful when making a for loop.
 
@@ -144,13 +144,13 @@ This assignment took a while for me, but as a result of it I now understand list
 
 ### Assignment Description
 
-For the MSP Challenge assignent, the goal was to create a functioning hangman game. To do this, several functions had to be created that divided up the tasks, since the assignment as a whole was relatively complicated. The basis of the code was to create a function that generated the hangman image and a function that checked user input of a guessed letter and determined whether it was part or not part of the secret word. 
+For the MSP Challenge assignment, the goal was to create a functioning hangman game. To do this, several functions had to be created that divided up the tasks, since the assignment as a whole was relatively complicated. The basis of the code was to create a function that generated the hangman image and a function that checked user input of a guessed letter and determined whether it was part or not part of the secret word. 
 
 ### Evidence 
 
 Vanilla / Some Spice version:
 
-![MSP Challenge](/Engineering_IV-MSP_Challenge.png)
+![MSP Challenge](/Engineering_IV-MSP_Challenge_1.png)
 
 ### Wiring
 
@@ -160,10 +160,10 @@ No wiring was required for this assignment.
 
 The MSP Challenge was a good example of how it's really helpful to divide up sections of code into functions. Doing this makes the organization of the code easier and the workload less intimidating. Here are some lessons learned:
 
-* The .join() function is really helpful for converting an index into string. Whatever preceeds the functions, like "".join() or ", ".join() will be what goes in between each item in the index when it's converted to a string.
+* The `.join()` function is really helpful for converting an index into string. Whatever precedes the functions, like `"".join()` or `", ".join()` will be what goes in between each item in the index when it's converted to a string.
 
 * The `enumerate()` function will convert a string into a list. It's kind of the opposite of the `.join()` function. 
 
-* In a for loop, if, for example, `for position, character in listis` was written, what goes before the comma will represent the place/position in the list, and what goes after the comma will represent the value of whatever place in the list. 
+* In a for loop, if, for example, `for position, character in list` was written, what goes before the comma will represent the place/position in the list, and what goes after the comma will represent the value of whatever place in the list. 
 
 * More info in the code comments.
