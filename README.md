@@ -167,3 +167,36 @@ The MSP Challenge was a good example of how it's really helpful to divide up sec
 * In a for loop, if, for example, `for position, character in list` was written, what goes before the comma will represent the place/position in the list, and what goes after the comma will represent the value of whatever place in the list. 
 
 * More info in the code comments.
+
+
+## CAD_Swing_Arm 
+
+### Assignment Description
+
+This assignment asked me to replicate a swing arm part from a set of drawings. The assignment was set up in a way that was similar to how an OnShape certification test would be, so that the structure of how it works would be more familiar.
+
+### Evidence 
+
+Configuration #1
+
+![Configuration 1](https://user-images.githubusercontent.com/89222808/137238893-1fb00671-a56e-4945-a0b9-d2524f2dbd67.png)
+
+Configuration #2
+
+![Configuration 2](https://user-images.githubusercontent.com/89222808/137238944-1d552151-7784-423e-88ad-8f4976325d97.png)
+
+### Part Link
+[Swing Arm Part](https://cvilleschools.onshape.com/documents/3a036d7d27feee6e965d0f59/w/c94159d42a85942668a71f24/e/de84f3e5f3246241c71112dd?configuration=List_egCNsovqerewr9%3DDefault&renderMode=0&uiState=6171739679c5e6291e6e5569)
+
+### Reflection
+The CAD Swing Arm assignment was more difficult than I had expected. The main challenge was to create a part based on different drawings with their corresponding measurements, which were from different view points. It took me several tries to get the basis for the swing arm down, but once I had the basic structure of it, adding fillets and cuts was easier.
+
+Here are some lessons learned:
+
+* When there are a bunch of drawings that a parts supposed to be mae from, it's helpful to start with just one and to create a rough sketch of it. The sketch doesn't have to be fully defined, but just creating some geometry to work off of can be a big help.
+
+* It's useful to create variables in sketches if multiple configurations of a part are going to be made. Doing this made it easier to create a second configuration of the swing arm once the first had been made. 
+
+* Fillets should usually come last in a part since they can interfere with other sketches and extrusions if they're made early on.  
+
+* There're lots of ways to build a part, like doing a bunch of sketches or doing fewer and more complicated sketch. Usually, it's easier to do multiple sketches and then base them off of each other with features like "use," but doing a more complicated sketch--what I did for my part--can work decently, just as long as it's done well since there're more things that can go wrong.
