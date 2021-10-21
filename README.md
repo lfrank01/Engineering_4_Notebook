@@ -200,3 +200,49 @@ Here are some lessons learned:
 * Fillets should usually come last in a part since they can interfere with other sketches and extrusions if they're made early on.  
 
 * There're lots of ways to build a part, like doing a bunch of sketches or doing fewer and more complicated sketch. Usually, it's easier to do multiple sketches and then base them off of each other with features like "use," but doing a more complicated sketch--what I did for my part--can work decently, just as long as it's done well since there're more things that can go wrong.
+
+
+## CAD Skateboard
+
+### Assignment Description
+
+The CAD Skateboard assignment was basically a tutorial on most of the basic OnShape features. It covered how to make a sketch and constrain it, how to make extrudes and revolves, how to link sketches to each other with the "use" feature and dimesnions, and how to assemble a part (skateboard) with nuts, bolts, and mate connectors. The goal of the assignent was to make a skateboard. To make it, the skateboard's deck, baseplate, hanger, bushing, an wheels. After this was done and the skateboard was assembled, there was also the option to curve the board, change the baseplate, and do other ad-onns.
+
+### Evidence 
+
+Basic skateboard assembly
+
+![Configuration 1](/Engineering_IV-Basic_Skateboard_Top_View.png)
+
+Bottom of advanced skateboard
+
+![Bottom of advanced skateboard](/Engineering_IV-Bottom_Skateboard_Advanced.png)
+
+Bottom skateboard original
+
+![Bottom skateboard original](/Engineering_IV-Bottom_Skateboard_Original.png)
+
+Bottom view advanced skateboard
+
+![Bottom view advanced skateboard](/Engineering_IV-Skateboard_Bottom_View.png)
+
+Top view advanced skateboard
+
+![Top view advanced skateboard](/Engineering_IV-Skateboard_View_Isometric.png)
+
+
+### Part Link
+[Skateboard Doc](https://cvilleschools.onshape.com/documents/22b030e3a14a54e0693551bc/w/bf8614f874c22e27b8822194/e/2df190b012d584e622d02173?renderMode=0&uiState=61717937cf0ba439faa7c38d)
+
+### Reflection
+The skateboard assignment was relatively straight-forward since it was set up like a walk through / tutorial, but there were some dificult aspects of it, especially for the advanced section. 
+
+Here are some lessons learned:
+
+* The "hole" feature is really conveiniant for making holes in a part that are the same size as commonly-used nuts, bolts, and other machine parts. When it's used, there's a menu with different brands, measurements, and features. 
+
+* The "split" feature is useful for seperating a part into sections. It was used along with the "move face" feature to bend the edges of the skateboard deck.
+
+* It's a lot easier to model a wheel or circular part with the revolve feature instead of an extrude. Also, multiple parts can be made based on one sketch, like how the wheel and bearing were made.
+
+* Creating related parts in an assembly in a part studio is helpful for making them relative to each other, which saves time.
