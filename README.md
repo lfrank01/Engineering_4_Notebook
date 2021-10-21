@@ -210,25 +210,23 @@ The CAD Skateboard assignment was basically a tutorial on most of the basic OnSh
 
 ### Evidence 
 
-Basic skateboard assembly
+The basic skateboard's finished assembly:
 
 ![Configuration 1](/Engineering_IV-Basic_Skateboard_Top_View.png)
 
-Bottom of advanced skateboard
-
-![Bottom of advanced skateboard](/Engineering_IV-Bottom_Skateboard_Advanced.png)
-
-Bottom skateboard original
+The lower part of the same part:
 
 ![Bottom skateboard original](/Engineering_IV-Bottom_Skateboard_Original.png)
 
-Bottom view advanced skateboard
+The lower part of the advanced baseplate
 
-![Bottom view advanced skateboard](/Engineering_IV-Skateboard_Bottom_View.png)
+![Bottom of advanced skateboard](/Engineering_IV-Bottom_Skateboard_Advanced.png)
 
-Top view advanced skateboard
+The advanced skateboard's assembly:
 
 ![Top view advanced skateboard](/Engineering_IV-Skateboard_View_Isometric.png)
+
+![Bottom view advanced skateboard](/Engineering_IV-Skateboard_Bottom_View.png)
 
 
 ### Part Link
