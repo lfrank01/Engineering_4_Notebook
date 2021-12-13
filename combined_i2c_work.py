@@ -61,7 +61,7 @@ while True:
 
    # print('Accel X={0}, Accel Y={1}, Accel Z={2}, Mag X={3}, Mag Y={4}, Mag Z={5}'.format(
    # accel_x, accel_y, accel_z, mag_x, mag_y, mag_z))
-   # draw.text((x, top),    'Hello',  font=font, fill=255)
+   draw.text((x, top),    'Accel X={0}',  font=font, fill=255)
    # draw.text((x, top+20), 'World!', font=font, fill=255)
     
  
