@@ -6,7 +6,7 @@ import Adafruit_LSM303
 
 # Import screen libraries
 import Adafruit_GPIO.SPI as SPI
-import Adafruit_SSD1306 -- Screen
+import Adafruit_SSD1306 
 
 from PIL import Image
 from PIL import ImageDraw
@@ -29,14 +29,21 @@ disp = Adafruit_SSD1306.SSD1306_128_64(rst=RST, i2c_address=0x3d)
 # Initialize process
 disp.begin()
 
+# Image settings
+width = disp.width
+height = disp.height
+image = Image.new('1', (width, height))
+
 # Create font
 font = ImageFont.load_default()
 
 # Get drawing object to draw on image.
 draw = ImageDraw.Draw(image)
 
+x = 0
+top = 2
 while True:
-  
+	  
   # Read acel values
   accel, mag = lsm303.read()
   accel_x, accel_y, accel_z = accel
