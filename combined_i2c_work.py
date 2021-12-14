@@ -56,21 +56,21 @@ while True:
 
 
 
-   # draw.text for x, y ,z accel - Not done
+  # draw.text for x, y ,z accel - Not done
   
 
-   # print('Accel X={0}, Accel Y={1}, Accel Z={2}, Mag X={3}, Mag Y={4}, Mag Z={5}'.format(
-   # accel_x, accel_y, accel_z, mag_x, mag_y, mag_z))
-   draw.text((x, top),    'Accel X={0}',  font=font, fill=255)
-   # draw.text((x, top+20), 'World!', font=font, fill=255)
+  # print('Accel X={0}, Accel Y={1}, Accel Z={2}, Mag X={3}, Mag Y={4}, Mag Z={5}'.format(
+  # accel_x, accel_y, accel_z, mag_x, mag_y, mag_z))
+  draw.text((x, top),    'Accel X={0}',  font=font, fill=255)
+  # draw.text((x, top+20), 'World!', font=font, fill=255)
     
  
 
-    # display image stuff
+  # display image stuff
 
-    disp.image(image)
-    disp.display()
+  disp.image(image)
+  disp.display()
 
-    # delay
+  # delay
 
-    time.sleep(5)
+  time.sleep(5)
