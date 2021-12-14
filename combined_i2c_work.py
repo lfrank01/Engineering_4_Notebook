@@ -28,10 +28,14 @@ disp = Adafruit_SSD1306.SSD1306_128_64(rst=RST, i2c_address=0x3d)
 
 # Initialize process
 disp.begin()
+disp.clear()
+disp.display()
 
 # Image settings
 width = disp.width
 height = disp.height
+
+print("Width: " + str(width) + " Height: " + str(height))
 image = Image.new('1', (width, height))
 
 # Create font
@@ -40,10 +44,10 @@ font = ImageFont.load_default()
 # Get drawing object to draw on image.
 draw = ImageDraw.Draw(image)
 
-x = 0
-top = 2
+x = 50
+top = 50
 while True:
-	  
+  print("Test")	  
   # Read acel values
   accel, mag = lsm303.read()
   accel_x, accel_y, accel_z = accel
@@ -52,7 +56,7 @@ while True:
       
   # clear screen
   disp.clear()
-  disp.display()
+  
   # Create blank image for drawing.
   # Make sure to create image with mode '1' for 1-bit color.
   width = disp.width
@@ -68,7 +72,7 @@ while True:
 
   # print('Accel X={0}, Accel Y={1}, Accel Z={2}, Mag X={3}, Mag Y={4}, Mag Z={5}'.format(
   # accel_x, accel_y, accel_z, mag_x, mag_y, mag_z))
-  draw.text((x, top),    'Accel X={0}',  font=font, fill=255)
+  draw.text((x, top),    f"Accel X={0}",  font=font, fill=255)
   # draw.text((x, top+20), 'World!', font=font, fill=255)
     
  
@@ -80,4 +84,4 @@ while True:
 
   # delay
 
-  time.sleep(5)
+  time.sleep(1)
