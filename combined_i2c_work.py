@@ -55,13 +55,13 @@ while True:
 
       
   # clear screen
-  disp.clear()
+  # disp.clear()
   
   # Create blank image for drawing.
   # Make sure to create image with mode '1' for 1-bit color.
   width = disp.width
   height = disp.height
-  image = Image.new('1', (width, height))
+#  image = Image.new('1', (width, height))
   # Draw a black filled box to clear the image.
   draw.rectangle((0,0,width,height), outline=0, fill=0)
 
@@ -72,7 +72,9 @@ while True:
 
   # print('Accel X={0}, Accel Y={1}, Accel Z={2}, Mag X={3}, Mag Y={4}, Mag Z={5}'.format(
   # accel_x, accel_y, accel_z, mag_x, mag_y, mag_z))
-  draw.text((x, top),    f"Accel X={0}",  font=font, fill=255)
+  draw.text((20, 50),    f"Accel X={accel_x}",  font=font, fill=255)
+  draw.text((20, 40),    f"Accel X={accel_y}",  font=font, fill=255)
+  draw.text((20, 30),    f"Accel X={accel_z}",  font=font, fill=255)
   # draw.text((x, top+20), 'World!', font=font, fill=255)
     
  
