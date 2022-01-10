@@ -244,3 +244,67 @@ Here are some lessons learned:
 * It's a lot easier to model a wheel or circular part with the revolve feature instead of an extrude. Also, multiple parts can be made based on one sketch, like how the wheel and bearing were made.
 
 * Creating related parts in an assembly in a part studio is helpful for making them relative to each other, which saves time.
+
+
+## GPIO Pins - I2C
+
+### Assignment Description
+
+For the GPIO Pins-Asignment, the pi's GIPO pins were used along with an i2c device to rig up an LCD and accelerometer. The goal was to get the LCD to display the data that the accelerometer detected and update it as that data changed. In order to accomplish this, a library from the accelerometer (LSM303), simpletest.py and a library from the LCD (SSD1306), shapes.py, were combined into the file combined_i2c.py, which utilizied the libraries of both. 
+
+### Evidence 
+
+![Combind i2c](/Engineering_IV-combined_i2c_.py)
+
+![GIF](/Engineering_IV-combined_i2c_.gif)
+
+
+### Wiring
+
+![Wiring diagram](/Enginering-IV-combined_i2c.png)
+
+### Reflection
+
+This asignment was intiially prettty dificult because I hadn't used an SSD106 LCD or acceleromter, but havng the example test code from the libraries of the two parts was really helpful. Calling both libraries in a different file also added uneccesary confusion, so combinging the to test libraries worked well to make the coding proccess smoother.
+
+Notes:
+
+* `sudo i2cdetect -y 1` is neccesary to find the working pins for the accelermotoer and LCD.
+
+* Only the accel data from the accelerometer, not the mag data, was neccesary for the aignment.
+
+* F strings like in the print statement `f"Accel X={accel_x}"` make it a lot easier to incoportate variables into prints.
+
+
+## Headless accelerometer
+
+### Assignment Description
+
+The Headless accelerometer expanded on the GPIO pins-i2c asignment. The combined_i2c.py was the base code with the LCD displaying the accel data, but the add-on was that a shapes (square, triangle, or in my case a circle) had to be drawn on the LCD and have one of it's base axes linked to the accel data. For my code, the x-axis of the circle was linked to the x accel data that the accelerometer detected, meaning the circle would move back and forth based on the accelometer's orientation.
+
+### Evidence 
+
+![Headless_accel](/Engineering_IV-combined_i2c_.py)
+
+![GIF](/Engineering_IV-combined_i2c_.gif)
+
+
+### Wiring
+
+![Wiring diagram](/Enginering-IV-combined_i2c.png)
+
+### Reflection
+
+This asignment was intiially prettty dificult because I hadn't used an SSD106 LCD or acceleromter, but havng the example test code from the libraries of the two parts was really helpful. Calling both libraries in a different file also added uneccesary confusion, so combinging the to test libraries worked well to make the coding proccess smoother.
+
+Notes:
+
+* `sudo i2cdetect -y 1` is neccesary to find the working pins for the accelermotoer and LCD.
+
+* Only the accel data from the accelerometer, not the mag data, was neccesary for the aignment.
+
+* F strings like in the print statement `f"Accel X={accel_x}"` make it a lot easier to incoportate variables into prints.
+
+
+
+
