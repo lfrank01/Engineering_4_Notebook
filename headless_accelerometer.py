@@ -51,27 +51,56 @@ while True:
     accel, mag = lsm303.read()
     accel_x, accel_y, accel_z = accel
     mag_x, mag_y, mag_z = mag
-
-#    print(
-#        "Accel X: "
-#        + str(accel_x)
-#        + " | Accel Y: "
-#        + str(accel_y)
-#       + " | Accel Z: "
-#        + str(accel_z)
-#    )
+    print(
+        "Accel X: "
+        + str(accel_x)
+        + " | Accel Y: "
+        + str(accel_y)
+        + " | Accel Z: "
+        + str(accel_z)
+        + "  ||  Mag X: "
+        + str(mag_x)
+        + " | Mag Y: "
+        + str(mag_y)
+        + " | Mag Z: "
+        + str(mag_z)
+    )
 
     # Draw a black filled box to clear the image.
     draw.rectangle((0, 0, width, height), outline=0, fill=0)
 
     # Display X, Y and Z acceleration values
-    draw.text((20, 50), f"Accel X={accel_x}", font=font, fill=255)
-    draw.text((20, 40), f"Accel Y={accel_y}", font=font, fill=255)
-    draw.text((20, 30), f"Accel Z={accel_z}", font=font, fill=255)
+    draw.text((0, 0), f"X={accel_x}", font=font, fill=255)
+    draw.text((55, 0), f"Y={accel_y}", font=font, fill=255)
+    draw.text((100, 0), f"Z={accel_z}", font=font, fill=255)
 
-    # display image stuff
+    # Calculate position of shape
+    y_margin = 10  # we need some space for the text above the shape
+
+    # Calculate the zero position
+    x_center = int(width / 2)
+    y_center = int((height + y_margin) / 2)
+
+    # Calculate the movement caused by X and Y values
+    x_move = int(accel_x / 2000 * width)
+    y_move = int(accel_y / 2000 * height)
+
+    x_position = x_center + x_move
+    y_position = y_center - y_move
+
+    # Draw a circle
+    circle_radius = 10
+    draw.ellipse(
+        (
+            x_position - circle_radius,
+            y_position - circle_radius,
+            x_position + circle_radius,
+            y_position + circle_radius,
+        ),
+        outline=255,
+        fill=0,
+    )
+
+    # display image on OLED
     disp.image(image)
     disp.display()
-
-    # delay
-    time.sleep(1)
