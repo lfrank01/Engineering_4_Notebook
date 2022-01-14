@@ -58,12 +58,6 @@ while True:
         + str(accel_y)
         + " | Accel Z: "
         + str(accel_z)
-        + "  ||  Mag X: "
-        + str(mag_x)
-        + " | Mag Y: "
-        + str(mag_y)
-        + " | Mag Z: "
-        + str(mag_z)
     )
 
     # Draw a black filled box to clear the image.
@@ -79,11 +73,13 @@ while True:
 
     # Calculate the zero position
     x_center = int(width / 2)
+    # Divide width by 2 to get center of LCD
     y_center = int((height + y_margin) / 2)
 
     # Calculate the movement caused by X and Y values
     x_move = int(accel_x / 2000 * width)
     y_move = int(accel_y / 2000 * height)
+    # Sale the x/y movement so that the circle will not move off the screen
 
     x_position = x_center + x_move
     y_position = y_center - y_move
