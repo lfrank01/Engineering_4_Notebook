@@ -254,14 +254,14 @@ For the GPIO Pins-Asignment, the pi's GIPO pins were used along with an i2c devi
 
 ### Evidence 
 
-![Combind i2c](/Engineering_IV-combined_i2c_.py)
+[Combined i2c](/Engineering_IV-combined_i2c_.py)
 
 ![GIF](/media/combined_i2c.gif)
 
 
 ### Wiring
 
-![Wiring diagram](/Enginering-IV-gpio_and_headless_accel.jpg)
+![Wiring diagram](/media/Enginering-IV-gpio_and_headless_accel.jpg)
 
 ### Reflection
 
@@ -284,14 +284,14 @@ The Headless accelerometer expanded on the GPIO pins-i2c asignment. The combined
 
 ### Evidence 
 
-![Headless_accel](/Engineering_IV-combined_i2c_.py)
+[Headless_accel](/Engineering_IV-combined_i2c_.py)
 
-![GIF](/Engineering_IV-combined_i2c.gif)
+![GIF](/media/headless_accel.gif)
 
 
 ### Wiring
 
-![Wiring diagram](/Enginering-IV-gpio_and_headless_accel.jpg)
+![Wiring diagram](/media/Enginering-IV-gpio_and_headless_accel.jpg)
 
 ### Reflection
 
