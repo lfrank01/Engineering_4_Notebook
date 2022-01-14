@@ -303,7 +303,11 @@ Notes:
 
 * Only the accel data from the accelerometer, not the mag data, was neccesary for the aignment.
 
-* F strings like in the print statement `f"Accel X={accel_x}"` make it a lot easier to incoportate variables into prints.
+* F strings like in the print statement `f"Accel X={accel_x}"` make it a lot easier to incoportate variables into prints
+
+* To draw an elipse, the function draw.elipse() makes the wok much easier, taking the co-verteces and verteces
+
+* It's important to scale the accel values so that they do not cause the circle to move off the screen
 
 
 
