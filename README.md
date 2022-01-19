@@ -254,9 +254,9 @@ For the GPIO Pins-Asignment, the pi's GIPO pins were used along with an i2c devi
 
 ### Evidence 
 
-[Combined i2c](/Engineering_IV-combined_i2c_.py)
+[Code](/Engineering_IV-combined_i2c_.py)
 
-![GIF](/media/combined_i2c.gif)
+![GIF](/media/combined-i2c.gif)
 
 
 ### Wiring
