@@ -5,17 +5,17 @@ Note to self: for each assignment's documentation, there should be the assignmen
 
 
 ## Table of Contents
-* [Python_Dice_Roller](## Python_Dice_Roller)
-* [Python_Calculator](## Python_Calculator)
-* [Python_Quadratic_Solver](## Quadratic Solver)
-* [Python_Strings_and_Loops](## Strings and Loops)
-* [Python_MSP (Hangman)](## Hangman/MSP Challenge)
-* [Onshape_CAD_Intro](## CAD Skateboard)
-* [Onshape_Legos](#PythonDiceRoller)
-* [Raspberry_Pi_LED_Blink](#Python_Calculator)
-* [Raspberry_Pi_Shutdown_Button](#CAD_Swing_Arm)
-* [Raspberry_Pi_GPIO_I2C](## GPIO Pins - I2C)
-* [Raspberry_Pi_Headless_Accelerometer](## Headless accelerometer)
+* [Python_Dice_Roller](#Python_Dice_Roller)
+* [Python_Calculator](#Python_Calculator)
+* [Quadratic Solver](#Quadratic Solver)
+* [Strings and Loops](#Strings and Loops)
+* [Hangman/MSP Challenge](#Hangman/MSP Challenge)
+* [CAD Skateboard](#CAD Skateboard)
+* [OnShape Legos](#OnShape Legos)
+* [LED Blink](#LED Blink)
+* [Safe Shutdown Button](#Safe Shutdown Button)
+* [GPIO Pins - I2C](#GPIO Pins - I2C)
+* [Headless accelerometer](#Headless accelerometer)
 * [Raspberry_Pi_Camera](NA)
 * [Raspberry_Pi_Stop_Motion_Camera](NA)
 ---
@@ -262,6 +262,28 @@ Here are some lessons learned:
 * It's a lot easier to model a wheel or circular part with the revolve feature instead of an extrude. Also, multiple parts can be made based on one sketch, like how the wheel and bearing were made.
 
 * Creating related parts in an assembly in a part studio is helpful for making them relative to each other, which saves time.
+
+
+## OnShape Legos
+
+### Assignment Description
+
+### Evidence 
+
+### Wiring
+
+### Reflection
+
+
+## LED Blink
+
+### Assignment Description
+
+### Evidence 
+
+### Wiring
+
+### Reflection
 
 
 ## GPIO Pins - I2C
