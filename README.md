@@ -7,17 +7,15 @@ Note to self: for each assignment's documentation, there should be the assignmen
 ## Table of Contents
 * [Python_Dice_Roller](#Python_Dice_Roller)
 * [Python_Calculator](#Python_Calculator)
-* [Quadratic Solver](#Quadratic Solver)
-* [Strings and Loops](#Strings and Loops)
-* [Hangman/MSP Challenge](#Hangman/MSP Challenge)
-* [CAD Skateboard](#CAD Skateboard)
-* [OnShape Legos](#OnShape Legos)
-* [LED Blink](#LED Blink)
-* [Safe Shutdown Button](#Safe Shutdown Button)
-* [GPIO Pins - I2C](#GPIO Pins - I2C)
-* [Headless accelerometer](#Headless accelerometer)
-* [Raspberry_Pi_Camera](NA)
-* [Raspberry_Pi_Stop_Motion_Camera](NA)
+* [Quadratic_Solver](#Quadratic_Solver)
+* [Strings_and_Loops](#Strings_and_Loops)
+* [Hangman/MSP_Challenge](#Hangman/MSP_Challenge)
+* [CAD_Skateboard](#CAD_Skateboard)
+* [OnShape_Legos](#OnShape_Legos)
+* [LED_Blink](#LED_Blink)
+* [Safe_Shutdown_Button](#Safe_Shutdown_Button)
+* [GPIO_Pins--I2C](#GPIO_Pins--I2C)
+* [Headless_accelerometer](#Headless_accelerometer)
 ---
 
 
@@ -85,7 +83,7 @@ This assignment was initially confusing, but once I figured out that only one fu
 * More information can be found in the code comments. 
 
 
-## Quadratic Solver
+## Quadratic_Solver
 
 ### Assignment Description
 
@@ -121,7 +119,7 @@ I had to remember some basic algebra terms like the discriminant and vertex form
 * More lessons can be found in the code comments 
 
 
-## Strings and Loops
+## Strings_and_Loops
 
 ### Assignment Description
 
@@ -158,7 +156,7 @@ This assignment took a while for me, but as a result of it I now understand list
 * Code comments have additional info.
 
 
-## Hangman/MSP Challenge
+## Hangman/MSP_Challenge
 
 ### Assignment Description
 
@@ -220,7 +218,7 @@ Here are some lessons learned:
 * There're lots of ways to build a part, like doing a bunch of sketches or doing fewer and more complicated sketch. Usually, it's easier to do multiple sketches and then base them off of each other with features like "use," but doing a more complicated sketch--what I did for my part--can work decently, just as long as it's done well since there're more things that can go wrong.
 
 
-## CAD Skateboard
+## CAD_Skateboard
 
 ### Assignment Description
 
@@ -264,7 +262,7 @@ Here are some lessons learned:
 * Creating related parts in an assembly in a part studio is helpful for making them relative to each other, which saves time.
 
 
-## OnShape Legos
+## OnShape_Legos
 
 ### Assignment Description
 
@@ -275,7 +273,7 @@ Here are some lessons learned:
 ### Reflection
 
 
-## LED Blink
+## LED_Blink
 
 ### Assignment Description
 
@@ -286,7 +284,7 @@ Here are some lessons learned:
 ### Reflection
 
 
-## GPIO Pins - I2C
+## GPIO_Pins--I2C
 
 ### Assignment Description
 
@@ -316,7 +314,7 @@ Notes:
 * F strings like in the print statement `f"Accel X={accel_x}"` make it a lot easier to incoportate variables into prints.
 
 
-## Safe Shutdown Button
+## Safe_Shutdown_Button
 
 ### Assignment Description
 
@@ -341,7 +339,7 @@ Notes:
 
 * 
 
-## Headless accelerometer
+## Headless_accelerometer
 
 ### Assignment Description
 
