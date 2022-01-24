@@ -3,6 +3,24 @@ This repository contains documentation of Engineering 4 assignments and projects
 
 Note to self: for each assignment's documentation, there should be the assignment description, evidence, wiring (if applicable), and reflection.
 
+
+## Table of Contents
+* [Python_Dice_Roller](## Python_Dice_Roller)
+* [Python_Calculator](## Python_Calculator)
+* [Python_Quadratic_Solver](## Quadratic Solver)
+* [Python_Strings_and_Loops](## Strings and Loops)
+* [Python_MSP (Hangman)](## Hangman/MSP Challenge)
+* [Onshape_CAD_Intro](## CAD Skateboard)
+* [Onshape_Legos](#PythonDiceRoller)
+* [Raspberry_Pi_LED_Blink](#Python_Calculator)
+* [Raspberry_Pi_Shutdown_Button](#CAD_Swing_Arm)
+* [Raspberry_Pi_GPIO_I2C](## GPIO Pins - I2C)
+* [Raspberry_Pi_Headless_Accelerometer](## Headless accelerometer)
+* [Raspberry_Pi_Camera](NA)
+* [Raspberry_Pi_Stop_Motion_Camera](NA)
+---
+
+
 ## Python_Dice_Roller
 
 ### Assignment Description
@@ -13,11 +31,11 @@ The Python Dice Roller assignment was the first Python assignment in Engineering
 
 Vanilla version:
 
-![Vanilla Dice Roller](/Engineering_IV-Vanilla_Dice_Roller.png)
+![Vanilla Dice Roller](/media/Engineering_IV-Vanilla_Dice_Roller.png)
 
 Spicy version:
 
-![Spicy Dice Roller](/Engineering_IV-Spicy_Dice_Roller.png)
+![Spicy Dice Roller](/media/Engineering_IV-Spicy_Dice_Roller.png)
 
 ### Wiring
 
@@ -44,11 +62,11 @@ The Python Calculator was a step more difficult than the Dice Roller assignment,
 
 Vanilla version:
 
-![Vanilla Calculator](/Engineering_IV-Vanilla_Calculator.png)
+![Vanilla Calculator](/media/Engineering_IV-Vanilla_Calculator.png)
 
 Spicy version:
 
-![Spicy Calculator](/Engineering_IV-Spicy_Calculator.png)
+![Spicy Calculator](/media/Engineering_IV-Spicy_Calculator.png)
 
 ### Wiring
 
@@ -78,11 +96,11 @@ Some algebra had to be recalled to remember how to calculate the discriminant ((
 
 Vanilla version:
 
-![Vanilla Quadratic Solver](/Engineering_IV-Quadratic_Solver.png)
+![Vanilla Quadratic Solver](/media/Engineering_IV-Quadratic_Solver.png)
 
 Spicy version:
 
-![Spicy Quadratic Solver Correct](/Engineering_IV-Quadratic_Solver_Spicy_Correct.png)
+![Spicy Quadratic Solver Correct](/media/Engineering_IV-Quadratic_Solver_Spicy_Correct.png)
 
 ### Wiring
 
@@ -113,11 +131,11 @@ The code for the Strings and Loops assignment had to make it so that when a sent
 
 Vanilla version:
 
-![Vanilla Strings and Loops](/Engineering_IV-Strings_And_Loops.png)
+![Vanilla Strings and Loops](/media/Engineering_IV-Strings_And_Loops.png)
 
 Spicy version:
 
-![Spicy Strings and Loops](/Engineering_IV-Strings_And_Loops_Spicy.png)
+![Spicy Strings and Loops](/media/Engineering_IV-Strings_And_Loops_Spicy.png)
 
 ### Wiring
 
@@ -212,21 +230,21 @@ The CAD Skateboard assignment was basically a tutorial on most of the basic OnSh
 
 The basic skateboard's finished assembly:
 
-![Configuration 1](/Engineering_IV-Basic_Skateboard_Top_View.png)
+![Configuration 1](/media/Engineering_IV-Basic_Skateboard_Top_View.png)
 
 The lower part of the same part:
 
-![Bottom skateboard original](/Engineering_IV-Bottom_Skateboard_Original.png)
+![Bottom skateboard original](/media/Engineering_IV-Bottom_Skateboard_Original.png)
 
 The lower part of the advanced baseplate
 
-![Bottom of advanced skateboard](/Engineering_IV-Bottom_Skateboard_Advanced.png)
+![Bottom of advanced skateboard](/media/Engineering_IV-Bottom_Skateboard_Advanced.png)
 
 The advanced skateboard's assembly:
 
-![Top view advanced skateboard](/Engineering_IV-Skateboard_View_Isometric.png)
+![Top view advanced skateboard](/media/Engineering_IV-Skateboard_View_Isometric.png)
 
-![Bottom view advanced skateboard](/Engineering_IV-Skateboard_Bottom_View.png)
+![Bottom view advanced skateboard](/media/Engineering_IV-Skateboard_Bottom_View.png)
 
 
 ### Part Link
@@ -254,7 +272,7 @@ For the GPIO Pins-Asignment, the pi's GIPO pins were used along with an i2c devi
 
 ### Evidence 
 
-[Code](/Engineering_IV-combined_i2c_.py)
+[Code](/python/Engineering_IV-combined_i2c_.py)
 
 ![GIF](/media/combined-i2c.gif)
 
@@ -276,6 +294,31 @@ Notes:
 * F strings like in the print statement `f"Accel X={accel_x}"` make it a lot easier to incoportate variables into prints.
 
 
+## Safe Shutdown Button
+
+### Assignment Description
+
+For the GPIO Pins-Asignment, the pi's GIPO pins were used along with an i2c device to rig up an LCD and accelerometer. The goal was to get the LCD to display the data that the accelerometer detected and update it as that data changed. In order to accomplish this, a library from the accelerometer (LSM303), simpletest.py and a library from the LCD (SSD1306), shapes.py, were combined into the file combined_i2c.py, which utilizied the libraries of both. 
+
+### Evidence 
+
+[Code](/python/Engineering_IV-combined_i2c_.py)
+
+![GIF](/media/combined-i2c.gif)
+
+
+### Wiring
+
+![Wiring diagram]()
+
+### Reflection
+
+This asignment was intiially prettty dificult because I hadn't used an SSD106 LCD or acceleromter, but havng the example test code from the libraries of the two parts was really helpful. Calling both libraries in a different file also added uneccesary confusion, so combinging the to test libraries worked well to make the coding proccess smoother.
+
+Notes:
+
+* 
+
 ## Headless accelerometer
 
 ### Assignment Description
@@ -284,7 +327,7 @@ The Headless accelerometer expanded on the GPIO pins-i2c asignment. The combined
 
 ### Evidence 
 
-[Headless_accel](/Engineering_IV-combined_i2c_.py)
+[Headless_accel](/python/Engineering_IV-combined_i2c_.py)
 
 ![GIF](/media/headless_accel.gif)
 
