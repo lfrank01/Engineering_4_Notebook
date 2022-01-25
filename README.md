@@ -322,14 +322,12 @@ For the GPIO Pins-Asignment, the pi's GIPO pins were used along with an i2c devi
 
 ### Evidence 
 
-[Code](/python/Engineering_IV-combined_i2c_.py)
-
-![GIF](/media/combined-i2c.gif)
+[Code](/python/safe_restart_shutdown__int_interupt_Pi.py)
 
 
 ### Wiring
 
-![Wiring diagram]()
+![Wiring diagram](/media/safe_shutdown_button.jpg)
 
 ### Reflection
 
@@ -337,7 +335,9 @@ This asignment was intiially prettty dificult because I hadn't used an SSD106 LC
 
 Notes:
 
-* 
+* First of all, using daemons (self-running programs that operate in the backgroud of the computer) makes life a lot easier. Having a manual shutdown button allows the pi to be able to safely power off when it's main power source is an external battery.
+
+* I was having some trouble getting the shutdown button to work initially. I had tried re-creating the file using `python3 /home/pi/path-to-your-shutdown-file/your-shutdown-file.py &` (note that an & must be at the end of line for it to run automatically), but in the end when the command sudo shutdown -h now fixed the problem, so it never hurts to just try and reboot.
 
 ## Headless_accelerometer
 
@@ -354,7 +354,7 @@ The Headless accelerometer expanded on the GPIO pins-i2c asignment. The combined
 
 ### Wiring
 
-![Wiring diagram](/media/Enginering-IV-gpio_and_headless_accel.jpg)
+![Wiring diagram](/media/Engineering_IV-gpio_and_headless_accel.jpg)
 
 ### Reflection
 
