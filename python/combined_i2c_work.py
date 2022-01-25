@@ -46,8 +46,15 @@ draw = ImageDraw.Draw(image)
 
 print("Reading accelerometer data...")
 
+
 while True:
     # Read accel and mag values and print them
+    # Need to convert accel data from milli g's to m/s^2. To do this
+    # the z-value can be scaled from its millli g valu (~1016) to the 
+    # resting force of gravity (9.8 m/s/s)
+
+    CONVERSION_FACTOR = 1016/9.8 
+
     accel, mag = lsm303.read()
     accel_x, accel_y, accel_z = accel
     mag_x, mag_y, mag_z = mag
@@ -65,9 +72,9 @@ while True:
     draw.rectangle((0, 0, width, height), outline=0, fill=0)
 
     # Display X, Y and Z acceleration values
-    draw.text((20, 50), f"Accel X={accel_x}", font=font, fill=255)
-    draw.text((20, 40), f"Accel Y={accel_y}", font=font, fill=255)
-    draw.text((20, 30), f"Accel Z={accel_z}", font=font, fill=255)
+    draw.text((20, 50), f"Accel X={accel_x/CONVERSION_FACTOR}", font=font, fill=255)
+    draw.text((20, 40), f"Accel Y={accel_y/CONVERSION_FACTOR}", font=font, fill=255)
+    draw.text((20, 30), f"Accel Z={accel_z/CONVERSION_FACTOR}", font=font, fill=255)
 
     # display image stuff
     disp.image(image)

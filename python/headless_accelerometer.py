@@ -35,6 +35,8 @@ width = disp.width
 height = disp.height
 print("Width: " + str(width) + " Height: " + str(height))
 
+time.sleep(2)
+
 # Create blank image for drawing with mode '1' for 1-bit color.
 image = Image.new("1", (width, height))
 
@@ -47,26 +49,32 @@ draw = ImageDraw.Draw(image)
 print("Reading accelerometer data...")
 
 while True:
+
+    # Create conversion factor to convert accel data from milli g's to m/s^2
+    CONVERSION_FACTOR = 1016/9.8
+
     # Read accel and mag values and print them
     accel, mag = lsm303.read()
     accel_x, accel_y, accel_z = accel
     mag_x, mag_y, mag_z = mag
     print(
         "Accel X: "
-        + str(accel_x)
+        + str(int(accel_x/CONVERSION_FACTOR))
         + " | Accel Y: "
-        + str(accel_y)
+        + str(int(accel_y/CONVERSION_FACTOR))
         + " | Accel Z: "
-        + str(accel_z)
+        + str(int(accel_z/CONVERSION_FACTOR))
     )
+
+    time.sleep(0.1)
 
     # Draw a black filled box to clear the image.
     draw.rectangle((0, 0, width, height), outline=0, fill=0)
 
     # Display X, Y and Z acceleration values
-    draw.text((0, 0), f"X={accel_x}", font=font, fill=255)
-    draw.text((55, 0), f"Y={accel_y}", font=font, fill=255)
-    draw.text((100, 0), f"Z={accel_z}", font=font, fill=255)
+    draw.text((0, 0), f"X={int(accel_x/CONVERSION_FACTOR)}", font=font, fill=255)
+    draw.text((45, 0), f"Y={int(accel_y/CONVERSION_FACTOR)}", font=font, fill=255)
+    draw.text((90, 0), f"Z={int(accel_z/CONVERSION_FACTOR)}", font=font, fill=255)
 
     # Calculate position of shape
     y_margin = 10  # we need some space for the text above the shape
@@ -77,8 +85,8 @@ while True:
     y_center = int((height + y_margin) / 2)
 
     # Calculate the movement caused by X and Y values
-    x_move = int(accel_x / 2000 * width)
-    y_move = int(accel_y / 2000 * height)
+    x_move = int(accel_x / 20)
+    y_move = int(accel_y / 40)
     # Sale the x/y movement so that the circle will not move off the screen
 
     x_position = x_center + x_move

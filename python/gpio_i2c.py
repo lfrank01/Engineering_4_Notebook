@@ -1,7 +1,8 @@
 # Luke Frank, 12/7/21, gpio pins i2c
 
-import Adafruit_SSD1306
-import Adafruit_LSM_303
+
+import Adafruit_Python_SSD1306
+import Adafruit_Python_LSM303
 import time
 
 # Now for your assignment.  Write a new program by combining the two example scripts you have already used. 
