@@ -16,6 +16,8 @@ Note to self: for each assignment's documentation, there should be the assignmen
 * [Safe_Shutdown_Button](#Safe_Shutdown_Button)
 * [GPIO_Pins--I2C](#GPIO_Pins--I2C)
 * [Headless_accelerometer](#Headless_accelerometer)
+* [Pi_Camera](#Pi_Camera)
+* [Copy_Pasta](#Copy_Pasta)
 ---
 
 
@@ -373,5 +375,47 @@ Notes:
 * It's important to scale the accel values so that they do not cause the circle to move off the screen
 
 
+## Pi_Camera
+
+### Assignment Description
+
+### Evidence 
+
+[](/python/Engineering_IV-combined_i2c_.py)
+
+![GIF](/media/pi_camera.gif)
+
+
+### Wiring
+
+![Wiring diagram](/media/Engineering_IV-pi_camera.jpg)
+
+### Reflection
+
+Notes:
+
+* 
+
+
+## Copy_Pasta
+
+### Assignment Description
+
+### Evidence 
+
+[](/python/Engineering_IV-combined_i2c_.py)
+
+![GIF](/media/copy_pasta.gif)
+
+
+### Wiring
+
+![Wiring diagram](/media/Engineering_IV-copy_pasta.jpg)
+
+### Reflection
+
+Notes:
+
+* 
 
 
