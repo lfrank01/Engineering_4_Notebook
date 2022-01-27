@@ -30,7 +30,7 @@ with picamera.PiCamera() as camera:
 
     time.sleep(2)
 
-    camera.capture("/home/pi/Engineering_4_Notebook/media/test_01.jpg")
+    camera.capture("/home/pi/Engineering_4_Notebook/pics/test_01.jpg")
     # Specify path for the picture to go into.
 
     print("Picture taken")
