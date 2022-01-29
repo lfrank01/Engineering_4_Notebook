@@ -349,7 +349,7 @@ The Headless accelerometer expanded on the GPIO pins-i2c asignment. The combined
 
 ### Evidence 
 
-[Headless_accel](/python/Engineering_IV-combined_i2c_.py)
+[Code link](/python/Engineering_IV-combined_i2c_.py)
 
 ![GIF](/media/headless_accel.gif)
 
@@ -379,12 +379,17 @@ Notes:
 
 ### Assignment Description
 
+For the Pi Camera asignment, the raspberry pi's camera hardware was introduced. The goal was to, first, take a picture using the terminal; second, take a picture using python; third, take 5 pictures with python, each with a different effect.
+
 ### Evidence 
 
-[](/python/Engineering_IV-combined_i2c_.py)
+The first camera test worked to simply take one picture through python script.
+[First camera test](/python/camera_test_01.py)
 
-![GIF](/media/pi_camera.gif)
+The second camera test expanded on the first and took 5 consecutive pictures, each with a different visual effect.
+[Second camera test](/python/camera_test_02.py)
 
+Note - no gif was needed for this assignment because the only hardware was the pi camera. 
 
 ### Wiring
 
@@ -392,9 +397,15 @@ Notes:
 
 ### Reflection
 
+This asignment was not too challenging due to the fact that the links [1](https://picamera.readthedocs.io/en/release-1.10/recipes1.html) & [2](https://picamera.readthedocs.io/en/release-1.10/api_camera.html#picamera.camera.PiCamera.image_effect) provided helpful information about the camera functions, arguments, and parameters. The second camera test was a bit more challenging because I incorporated the f strings  `camera.capture(f"/home/pi/Engineering_4_Notebook/pics/test_02_{effect}.jpg")` & `print(f"Picture with {effect} effect taken")` into the code to make the naming process cleaner, but this still was not to challenging.
+
 Notes:
 
-* 
+*  `camera.start_preview()` creates a preview of the picture being taken, but it only works on devices like macs or PCs.
+
+*  camera.capture() takes a picture.
+
+*  effect = camera.image_effect = 'insert effect' is how an effect is used
 
 
 ## Copy_Pasta
@@ -403,19 +414,25 @@ Notes:
 
 ### Evidence 
 
-[](/python/Engineering_IV-combined_i2c_.py)
+[Code link](/python/Engineering_IV-animation.py)
 
-![GIF](/media/copy_pasta.gif)
-
+![GIF](/media/animation.gif)
 
 ### Wiring
 
-![Wiring diagram](/media/Engineering_IV-copy_pasta.jpg)
+![Wiring diagram](/media/Engineering_IV-animation.jpg)
 
 ### Reflection
 
+The copypasta assignment was relatively straightforward as [this](https://www.raspberrypi.org/learning/push-button-stop-motion/) guide gave step-by-step 
+instructions. However, below are some takeaways.
+
 Notes:
 
-* 
+* Writing `ffmpeg -r 10 -i animation/frame%03d.jpg -qscale 2 animation.mp4` converts a series of images, in this case labled as frame followed by a 3 digit number, into an mp4.
 
+* The `mv` commands moves a file from one directory to another; the `mkdir` commands makes a directory; and the `rm` commands deletes a file. 
 
+* To explain the `%03d` in the line `camera.capture('/home/pi/Engineering_4_Notebook/animation/frame%03d.jpg' % frame)`: the `%` inserts the variable frame, the `3d` creates 3 digits following the variable, and the `d` means digit.
+
+*  I also found the command `sttty rows "" columns ""` to be helpful because it prevented lines from overwriting themselves.
