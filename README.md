@@ -168,7 +168,7 @@ For the MSP Challenge assignment, the goal was to create a functioning hangman g
 
 Vanilla / Some Spice version:
 
-![MSP Challenge](/Engineering_IV-MSP_Challenge_1.png)
+![MSP Challenge](/media/Engineering_IV-MSP_Challenge_1.png
 
 ### Wiring
 
@@ -309,7 +309,7 @@ The LED_Blink assignment was an introduction into how to use Python and also ope
 
 ### Wiring
 
-![Wiring diagram](/media/Enginering_IV-LED_Blink.png)
+![Wiring diagram](/media/Engineering_IV-LED_Blink.jpg)
 
 ### Reflection
 
@@ -323,6 +323,7 @@ This assignment was not altogether very dificult. Being an intro into Python, so
 
 * `GPIO.setmode(GPIO.BCM)` clarifies to the operating system that the pin layout to BCM.
 
+
 ## GPIO_Pins--I2C
 
 ### Assignment Description
@@ -335,10 +336,9 @@ For the GPIO Pins-Asignment, the pi's GIPO pins were used along with an i2c devi
 
 ![GIF](/media/combined-i2c.gif)
 
-
 ### Wiring
 
-![Wiring diagram](/media/Enginering_IV-gpio_and_headless_accel.jpg)
+![Wiring diagram](/media/Engineering_IV-gpio_and_headless_accel.jpg)
 
 ### Reflection
 
@@ -431,7 +431,7 @@ Note - no gif was needed for this assignment because the only hardware was the p
 
 ### Wiring
 
-![Wiring diagram](/media/Engineering_IV-pi_camera.jpg)
+![Wiring diagram](/media/pi_camera.jpg)
 
 ### Reflection
 
