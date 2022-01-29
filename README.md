@@ -272,10 +272,11 @@ OnShape Lego assignment provided a solid introduction into a lot of OnShapes's p
 
 ### Evidence 
 
-![Lego Configurations](/media/Engineering_IV-OnShape_Lego.png)
-![Lego Configurations](/media/Engineering_IV-OnShape_Duck.png)
-![Lego Configurations](/media/Engineering_IV-Watermelon_Drawing.png)
-![Lego Configurations](/media/Engineering_IV-Watermelon_Duck.png)
+![OnShape Lego](/media/Engineering_IV-OnShape_Lego.png)
+![OnShape Duck](/media/Engineering_IV-OnShape_Duck.png)
+![Watermelon Assembly](/media/Engineering_IV-OnShape_Legos_Watermelon.png)
+![Watermelon Drawing](/media/Engineering_IV-Watermelon_Drawing.png)
+
 
 ### Wiring
 
@@ -287,7 +288,7 @@ Looking back on this assignment, taking guides on the functions and abilities of
 
 * Configurations are **very** helpful. They can be used to make configurations of colors, dimensions, materials, etc. Here is an example:
 
-![Lego Configurations](/media/Engineering_IV-Onshape_Lego_Configurations.png)
+![Lego Configurations](/media/Engineering_IV-OnShape_Lego_Configurations.png)
 
 * It's important to know how to make drawings, because they're useful for providing a clear outline (like a blueprint) of one's work. Different views of assmeblys/parts can also be displayed on drawings.
 
@@ -304,11 +305,11 @@ The LED_Blink assignment was an introduction into how to use Python and also ope
 
 [Here's](/python/double_led_blink.py) my code. 
 
-![GIF](/media/led_blink.gif)
+![GIF](/media/double_blink.gif)
 
 ### Wiring
 
-![Wiring diagram](/media/Enginering-IV-LED_Blink.jpg)
+![Wiring diagram](/media/Enginering_IV-LED_Blink.png)
 
 ### Reflection
 
@@ -337,7 +338,7 @@ For the GPIO Pins-Asignment, the pi's GIPO pins were used along with an i2c devi
 
 ### Wiring
 
-![Wiring diagram](/media/Enginering-IV-gpio_and_headless_accel.jpg)
+![Wiring diagram](/media/Enginering_IV-gpio_and_headless_accel.jpg)
 
 ### Reflection
 
