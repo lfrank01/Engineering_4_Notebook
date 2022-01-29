@@ -268,23 +268,59 @@ Here are some lessons learned:
 
 ### Assignment Description
 
+OnShape Lego assignment provided a solid introduction into a lot of OnShapes's part studio, assemblies, and drawings. The assignment was relatively straightforward because it was all guided, but the depth of the work that had to be done and somewhat new material, notably drawings, made the assignment a bit challenging.
+
 ### Evidence 
+
+![Lego Configurations](/media/)
+![Lego Configurations](/media/)
+![Lego Configurations](/media/)
+![Lego Configurations](/media/)
 
 ### Wiring
 
+No wiring was neeed for this assignment.
+
 ### Reflection
+
+Looking back on this assignment, taking guides on the functions and abilities of OnShape really is helpful because doing so provides tools that make one's relationship with OnShape a lot easier in the future when work becomes more complex. Here are some takeaways.
+
+* Configurations are **very** helpful. They can be used to make configurations of colors, dimensions, materials, etc. Here is an example:
+
+![Lego Configurations](/media/Engineering_IV-Onshape_Lego_Configurations.jpeg)
+
+* It's important to know how to make drawings, because they're useful for providing a clear outline (like a blueprint) of one's work. Different views of assmeblys/parts can also be displayed on drawings.
+
+* The expand feature in OnShape allows one to eperate the individual parts of an assembly so that how it's assembled can be shown more clearly. 
 
 
 ## LED_Blink
 
 ### Assignment Description
 
+The LED_Blink assignment was an introduction into how to use Python and also operate the raspberry pi using the terminal. For the assignment, the first goal was to make an LED blink and turn on/off using the command line. Next, using the python, the goal was to get to LEDs to work in syncrony, where the one would turn on when the other turned off. 
+
 ### Evidence 
+
+![Wiring diagram](/media/Enginering-IV-LED_Blink.jpg)
+
+![Wiring diagram](/media/)
 
 ### Wiring
 
+![Wiring diagram](/media/Enginering-IV-LED_Blink.jpg)
+
 ### Reflection
 
+This assignment was not altogether very dificult. Being an intro into Python, some new syntax had to be leaned, but this was not too dificut having learned Circuit Python altogether. Here are some notes:
+
+* The command `gpio readall` shows the pin layout for the raspberry pi. If a pin reads as 0, it's input; 1, it's output. Also, note that BCM numbering is what is displayed on the pi's t-cobbler, meaning it's arguably the most useful labeling system.
+
+* Code should usually be sort of trademarked by writing one's name and date of the code's creation for context. It's mainly just a good habit.
+
+* `gpio -g mode 21 out` sets a pin to output, and `gpio -g write 21 1` sets it to high. Note tht the `-g` makes it clear that BCM numbering's being used.
+
+* `GPIO.setmode(GPIO.BCM)` clarifies to the operating system that the pin layout to BCM.
 
 ## GPIO_Pins--I2C
 
@@ -340,6 +376,7 @@ Notes:
 * First of all, using daemons (self-running programs that operate in the backgroud of the computer) makes life a lot easier. Having a manual shutdown button allows the pi to be able to safely power off when it's main power source is an external battery.
 
 * I was having some trouble getting the shutdown button to work initially. I had tried re-creating the file using `python3 /home/pi/path-to-your-shutdown-file/your-shutdown-file.py &` (note that an & must be at the end of line for it to run automatically), but in the end when the command sudo shutdown -h now fixed the problem, so it never hurts to just try and reboot.
+
 
 ## Headless_accelerometer
 
@@ -397,7 +434,7 @@ Note - no gif was needed for this assignment because the only hardware was the p
 
 ### Reflection
 
-This asignment was not too challenging due to the fact that the links [1](https://picamera.readthedocs.io/en/release-1.10/recipes1.html) & [2](https://picamera.readthedocs.io/en/release-1.10/api_camera.html#picamera.camera.PiCamera.image_effect) provided helpful information about the camera functions, arguments, and parameters. The second camera test was a bit more challenging because I incorporated the f strings  `camera.capture(f"/home/pi/Engineering_4_Notebook/pics/test_02_{effect}.jpg")` & `print(f"Picture with {effect} effect taken")` into the code to make the naming process cleaner, but this still was not to challenging.
+This asignment was not too challenging due to the fact that the links [1](https://picamera.readthedocs.io/en/release-1.10/recipes1.html) & [2](https://picamera.readthedocs.io/en/release-1.10/api_camera.html#picamera.camera.PiCamera.image_effect) provided helpful information about the camera functions, arguments, and parameters. The second camera test was a bit more challenging because I incorporated the f strings `camera.capture(f"/home/pi/Engineering_4_Notebook/pics/test_02_{effect}.jpg")` & `print(f"Picture with {effect} effect taken")` into the code to make the naming process cleaner, but this still was not to challenging.
 
 Notes:
 
@@ -411,6 +448,9 @@ Notes:
 ## Copy_Pasta
 
 ### Assignment Description
+
+For the copypasta assignment, the knowledge from the Pi_Camera assignment was expanded into creating a short stop-motion video of our choice using the pi camera and a remote button. 
+
 
 ### Evidence 
 
@@ -429,10 +469,12 @@ instructions. However, below are some takeaways.
 
 Notes:
 
-* Writing `ffmpeg -r 10 -i animation/frame%03d.jpg -qscale 2 animation.mp4` converts a series of images, in this case labled as frame followed by a 3 digit number, into an mp4.
+* Writing `ffmpeg -r 10 -i animation/frame%03d.jpg -qscale 2 animation.mp4` converts a series of images, in this case labled as frame followed by a 3 digit number, into an mp4. Then, the setting `-r 10`, meaning ten frames per second, can be changed in the animation settings.
+
+* The `button.wait_for_press()` script makes it so that the code only proceeds after a manual button is activated.
 
 * The `mv` commands moves a file from one directory to another; the `mkdir` commands makes a directory; and the `rm` commands deletes a file. 
 
 * To explain the `%03d` in the line `camera.capture('/home/pi/Engineering_4_Notebook/animation/frame%03d.jpg' % frame)`: the `%` inserts the variable frame, the `3d` creates 3 digits following the variable, and the `d` means digit.
 
-*  I also found the command `sttty rows "" columns ""` to be helpful because it prevented lines from overwriting themselves.
+* I also found the command `sttty rows "" columns ""` to be helpful because it prevented lines from overwriting themselves.
