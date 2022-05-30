@@ -168,7 +168,7 @@ For the MSP Challenge assignment, the goal was to create a functioning hangman g
 
 Vanilla / Some Spice version:
 
-![MSP Challenge](/media/Engineering_IV-MSP_Challenge_1.png
+![MSP Challenge](/media/Engineering_IV-MSP_Challenge_1.png)
 
 ### Wiring
 
